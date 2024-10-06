@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hello_world/basic_widgets/fab_widget.dart';
 import 'package:hello_world/basic_widgets/image_widget.dart';
 import 'package:hello_world/basic_widgets/loading_cupertino.dart';
+import 'package:hello_world/basic_widgets/scaffold_widget.dart';
 import 'package:hello_world/basic_widgets/text_widget.dart';
 
 void main() {
@@ -35,7 +36,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyScaffoldWidget(title: 'Flutter Demo Home Page'),
       // menjalakan myCupertinoWidget() dan yang lain karena method widget build pada class tersebut mereturn materialApp kembali
       // home: const MyCupertinoWidget(),
       // home: const MyFABWidget(),
@@ -129,7 +131,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-// scafold widget //////////////////////////////////////////////////////////////////////////////////////
+// scaffold widget //////////////////////////////////////////////////////////////////////////////////////
 // class MyApp extends StatelessWidget {
 //   const MyApp({Key? key}) : super(key: key);
 
@@ -179,7 +181,7 @@ class _MyHomePageState extends State<MyHomePage> {
 //             ),
 //             Text(
 //               '$_counter',
-//               style: Theme.of(context).textTheme.headline4,
+//               style: Theme.of(context).textTheme.headlineMedium,
 //             ),
 //           ],
 //         ),
